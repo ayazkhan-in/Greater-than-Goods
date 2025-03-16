@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="bargain.css">
+    <link rel="shortcut icon" href="images/Logo.png" type="image/x-icon">
+    <script src="product.js"></script>
+    <title>Greater than Goods</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="market.html" class="logo"><img src="images/Logo.png" alt="logo"></a>
+        <ul class="menu">
+            <li><a href="market.html" class="active">Home</a></li>
+            <li><a href="chat.html">ChatBot</a></li>
+            <li><a href="">Account</a></li>
+            <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+
+        <div class="menu-btn"><i class="fa-solid fa-bars"></i></div>
+    </nav>
+    
+    <div class="container">
+        <div class="right-box">
+            <div class="main-image-box">
+                <img src="images/avocado.png" id="mainImage" class="main-image">
+            </div>
+        </div>
+        <div class="details-box">
+            <h1>Avocado</h1>
+            <p>Availability (In Stock)</p>
+            <h2>₹ 80/pc</h2>
+            <table cellspacing="0" class="inputs">
+                <tr>
+                    <td>Quantity</td>
+                    <td align="right" class="quantity-controls">
+                        <button type="button" class="quantity-btn" onclick="decrementQuantity()">-</button>
+                        <input type="number" id="first">
+                        <button type="button" class="quantity-btn" onclick="incrementQuantity()">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td align="left"><input type="text" id="second" readonly></td>
+                </tr>
+            </table>
+            <h4>Description</h4>
+            <p>Sometimes you can't get enough of Avocado's buttery flavour. Avocados are delicious and healthy! The mild flavour and creamy texture of avocados make them a versatile addition to lunch or dinner. Whether you are looking to make a healthy treat, or are looking for an easy way to make your sandwiches taste better, avocado is the answer. There are many ways to enjoy avocado including avocado fritters, avocado sushi rolls, and even avoca-dip. So, go ahead, and buy Avocado Hass Each online now!</p>
+            <div class="buyBargain">
+                <a href="payment.html">Buy Now</a> <a href="" class="Bargain">Bargain!</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        $(".menu-btn").click(function (){
+            $(".navbar .menu").toggleClass("active");
+            $(".menu-btn i").toggleClass("active");
+        });
+    </script>
+    <script src="product.js"></script>
+</body>
+</html>

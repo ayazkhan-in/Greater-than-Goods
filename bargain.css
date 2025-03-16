@@ -1,0 +1,119 @@
+/* Bargain Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+    animation: modalSlideIn 0.3s ease;
+}
+
+@keyframes modalSlideIn {
+    from { transform: translateY(-100px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.close-modal {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #424144;
+}
+
+.close-modal:hover {
+    color: #f63e4e;
+}
+
+.bargain-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.bargain-form h3 {
+    color: #424144;
+    margin-bottom: 10px;
+}
+
+.price-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+}
+
+.price-info span:first-child {
+    font-weight: bold;
+    color: #424144;
+}
+
+.price-info span:last-child {
+    color: #f63e4e;
+    font-size: 1.1em;
+}
+
+.error-message {
+    color: #f63e4e;
+    font-size: 0.9em;
+    display: none;
+    margin-top: 5px;
+}
+
+.bargain-form .price-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.bargain-form input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.bargain-form input[type="number"]:focus {
+    border-color: #18b2d8;
+    outline: none;
+}
+
+.bargain-form button {
+    background-color: #f63e4e;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.bargain-form button:hover {
+    background-color: #f50a1e;
+}
+
+.bargain-form .error-message {
+    color: #f63e4e;
+    font-size: 14px;
+    display: none;
+}
